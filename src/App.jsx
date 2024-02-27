@@ -18,8 +18,6 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-
-      <div>
         <BrowserRouter>
         <Navbar/>
         <Routes>
@@ -33,12 +31,8 @@ function App() {
           <Route path='/cart' element={<Cart/>}/>
           <Route path='/login' element={<LoginSignup/>}/>
         </Routes>
-        <Shop/>
         <Footer/>
-        </BrowserRouter>
-        
-      </div>
-    
+        </BrowserRouter>    
   );
 }
 
